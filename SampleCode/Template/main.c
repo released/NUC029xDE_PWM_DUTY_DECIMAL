@@ -62,7 +62,7 @@ void PWM0_CH0_Init(void)
     SYS->GPA_MFP |= SYS_GPA_MFP_PA12_PWM0_CH0;
 
 
-    PWM_ConfigOutputChannel(PWM0, 0, 20000, 0);
+    PWM_ConfigOutputChannel(PWM0, 0, PWM_FREQ, 0);
     PWM_EnableOutput(PWM0, PWM_CH_0_MASK);
 
     /* Start PWM module */
